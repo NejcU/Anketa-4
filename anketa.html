@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ocenjevanje posnetka</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Ocenjevanje avdio posnetkov</h1>
+
+    <div class="progress">
+        Posnetek <span id="currentNumber">1</span>
+        od
+        <span id="totalNumber">24</span>
+    </div>
+
+    <div class="audio-card">
+
+        <h2 id="audioTitle">Posnetek 1</h2>
+
+        <audio id="audioPlayer" controls>
+            Vaš brskalnik ne podpira predvajanja zvoka.
+        </audio>
+
+        <hr>
+
+        <form id="surveyForm">
+
+            <h3>Kako primeren se vam je zdel glas?</h3>
+
+            <div class="rating">
+                <label>
+                    <input type="radio" name="quality" value="1">
+                    1
+                </label>
+                <label>
+                    <input type="radio" name="quality" value="2">
+                    2
+                </label>
+                <label>
+                    <input type="radio" name="quality" value="3">
+                    3
+                </label>
+                <label>
+                    <input type="radio" name="quality" value="4">
+                    4
+                </label>
+                <label>
+                    <input type="radio" name="quality" value="5">
+                    5
+                </label>
+                <label>
+                    <input type="radio" name="quality" value="6">
+                    6
+                </label>
+                <label>
+                    <input type="radio" name="quality" value="7">
+                    7
+                </label>
+                <label>
+                    <input type="radio" name="quality" value="8">
+                    8
+                </label>
+                <label>
+                    <input type="radio" name="quality" value="9">
+                    9
+                </label>
+                <label>
+                    <input type="radio" name="quality" value="10">
+                    10
+                </label>
+            </div>
+
+            <p class="rating-description">
+                1 = popolnoma neprimeren, 10 = zelo primeren
+            </p>
+
+            <div class="navigation">
+
+                <button
+                        type="button"
+                        id="backButton"
+                        class="button secondary">
+                    Nazaj
+                </button>
+
+                <button
+                        type="button"
+                        id="nextButton"
+                        class="button">
+                    Naprej
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<iframe
+        name="submitFrame"
+        style="display: none;"
+></iframe>
+
+
+</body>
+</html>
